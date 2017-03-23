@@ -2,7 +2,7 @@ import React from 'react';
 
 const SchedulePage = () => {
     return (
-        <div class="schedule-page">
+        <div className="schedule-page">
             Schedule Page
         </div>
     );

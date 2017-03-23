@@ -2,7 +2,7 @@ import React from 'react';
 
 const SettingsPage = () => {
     return (
-        <div class="settings-page">
+        <div className="settings-page">
             Settings Page 
         </div>
     );

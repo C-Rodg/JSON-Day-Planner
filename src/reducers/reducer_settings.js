@@ -3,7 +3,8 @@
 // Set initial settings state
 
 const INITIAL_STATE = {
-    schedule : {}
+    schedule : {},
+    militaryTime: true
 };
 
 export const settings = ( state = INITIAL_STATE, action) => {
