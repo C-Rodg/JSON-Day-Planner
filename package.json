@@ -1,0 +1,8 @@
+{
+  "name": "starter-webpack2-react",
+  "version": "1.0.0",
+  "description": "A starter template using webpack 2 and reactjs",
+  "main": "index.js",
+  "author": "C-Rodg <rodgersbc@gmail.com>",
+  "license": "MIT"
+}
