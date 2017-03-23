@@ -1,7 +1,7 @@
 {
-  "name": "starter-webpack2-react",
+  "name": "json-day-planner",
   "version": "1.0.0",
-  "description": "A starter template using webpack 2 and reactjs",
+  "description": "A simple day planner using technologies including ReactJS, Redux, and Webpack 2.",
   "main": "index.js",
   "author": "C-Rodg <rodgersbc@gmail.com>",
   "license": "MIT",
@@ -34,5 +34,9 @@
     "style-loader": "^0.16.0",
     "url-loader": "^0.5.8",
     "webpack": "^2.3.1"
+  },
+  "repository": {
+    "url": "https://github.com/C-Rodg/JSON-Day-Planner.git",
+    "type": "git"
   }
 }
