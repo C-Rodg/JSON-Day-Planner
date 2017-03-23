@@ -6,7 +6,3 @@ dist
 
 # Yarn
 yarn.lock
-
-# Logos
-src/static/favicon.ico 
-src/static/logo.png 

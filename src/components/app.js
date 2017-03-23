@@ -2,7 +2,9 @@ import React from 'react';
 
 const App = () => {
     return (
-        <div>My App</div>
+        <div class="app-root">
+            My App
+        </div>
     );
 };
 

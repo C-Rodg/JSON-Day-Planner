@@ -62,7 +62,7 @@ module.exports = {
         }),
         new ExtractTextPlugin('styles.css'),
         new HtmlWebpackPlugin({
-            title: 'Welcome to Webpack 2', 
+            title: 'JSON Day Planner', 
             template: 'src/index.html'
         }),
         new UglifyJsPlugin({
