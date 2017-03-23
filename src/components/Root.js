@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import routes from '../routes';
 
 const Root = ({ store, history }) => {  
-    console.log(routes);  
     return (
         <Provider store={store}>
             <Router history={history} routes={routes} />
