@@ -1,0 +1,16 @@
+html, body, .app-root {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.app-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-body {
+    background-color: #fafafa;
+    flex: 1;
+}

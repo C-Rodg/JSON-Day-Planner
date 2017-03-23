@@ -1,0 +1,9 @@
+@import './fonts/roboto/roboto';
+@import './fonts/material-design-icons/material-icons';
+
+@import 'custom';
+
+html, body {
+	font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
