@@ -6,8 +6,9 @@
   "author": "C-Rodg <rodgersbc@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "rimraf dist && webpack --config ./webpack.config.js --progress --profile --colors --watch",
-    "build": "rimraf dist && webpack --config ./webpack.config.js --progress --profile --colors"
+    "test": "webpack-dev-server --inline --hot --port 3000",
+    "watch": "rimraf dist && webpack --config ./webpack.dev.js --progress --profile --colors --watch",
+    "build": "rimraf dist && webpack --config ./webpack.production.js --progress --profile --colors -p"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -39,7 +40,8 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.0",
     "url-loader": "^0.5.8",
-    "webpack": "^2.3.1"
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
   },
   "repository": {
     "url": "https://github.com/C-Rodg/JSON-Day-Planner.git",
