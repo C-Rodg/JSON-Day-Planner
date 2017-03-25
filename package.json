@@ -6,7 +6,7 @@
   "author": "C-Rodg <rodgersbc@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "webpack-dev-server --inline --hot --port 3000",
+    "test": "webpack-dev-server --config ./webpack.dev.js  --inline --hot --port 3000",
     "watch": "rimraf dist && webpack --config ./webpack.dev.js --progress --profile --colors --watch",
     "build": "rimraf dist && webpack --config ./webpack.production.js --progress --profile --colors -p"
   },
