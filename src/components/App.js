@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const App = ({ children }) => {
-    return (
-        <div className="app">
-            { children }
-        </div>
-    );
-};
+export default class App extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-export default App;
+    render() {
+        return (
+            <div className="app">
+                { this.props.children }
+            </div>
+        );
+    }
+}
