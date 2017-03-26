@@ -1,4 +1,3 @@
-import axios from 'axios';
 const moment = require('moment');
 
 export const SET_DATE_SUCCESS = 'SET_DATE_SUCCESS';
@@ -11,16 +10,9 @@ export const UPDATE_FILTER = 'UPDATE_FILTER';
 
 export function getDefaultSchedule() {
     return function(dispatch) {
-        axios.get('../static/default-schedule.json')
-            .then((response) => {
-                dispatch(setDateSuccess(response.data.date));
-                dispatch(setEventsSuccess(response.data.events));
-            })
-            .catch((err) => {
-                // Handle some error
-                console.log(err);
-                dispatch(setScheduleError(err));
-            });
+        const defaultSchedule = require('json-loader!../static/default-schedule.json');
+        dispatch(setDateSuccess(defaultSchedule.date));
+        dispatch(setEventsSuccess(defaultSchedule.events));
     }
 }
 

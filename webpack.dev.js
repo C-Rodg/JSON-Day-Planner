@@ -53,6 +53,10 @@ module.exports = {
             {
                 test: /\.(ttf|eot|svg|png|jpg|ico)(\?[a-z0-9#=&.]+)?$/,
                 loader: 'file-loader'
+            }, 
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
             }
         ]
     },
