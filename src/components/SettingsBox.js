@@ -13,17 +13,23 @@ export default class SettingsBox extends Component {
         }
     }
 
+    handleSetMilitary(status) {
+        this.props.onSetMilitary(status);
+    }
+
     render() {
         return (
-            <div className="settings-box">
+            <div className={"settings-box " + (this.props.settingsOpen ? "" : "hide")}>
+                <h1>Settings:</h1>
                 <div className="planner-import">
                     <input type="file" id="input-events" onChange={this.handleFileUpload.bind(this)}/>
                     <label htmlFor="input-events" className="input-event__label">
-                        Import new schedule <i className="material-icons">input</i>
+                        Import schedule <i className="material-icons">input</i>
                     </label>
                 </div>
                 <div className="time-switch">
-                    12 hour / 24 hour
+                    <span className={this.props.militaryTime ? "" : "active-time"} onClick={()=> this.handleSetMilitary(false)}>12 HOUR</span>
+                    <span className={this.props.militaryTime ? "active-time" : ""} onClick={()=> this.handleSetMilitary(true)}>24 HOUR</span>
                 </div>
             </div>
         );

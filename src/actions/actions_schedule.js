@@ -5,6 +5,8 @@ export const SET_DATE_SUCCESS = 'SET_DATE_SUCCESS';
 export const SET_EVENTS_SUCCESS = 'SET_EVENTS_SUCCESS';
 export const SET_SCHEDULE_ERROR = 'SET_SCHEDULE_ERROR';
 export const UPLOAD_SCHEDULE_ERROR = 'UPLOAD_SCHEDULE_ERROR';
+export const TOGGLE_MILITARY_TIME = 'TOGGLE_MILITARY_TIME';
+export const UPDATE_FILTER = 'UPDATE_FILTER';
 
 
 export function getDefaultSchedule() {
@@ -59,4 +61,18 @@ export function uploadNewSchedule(str) {
             };
         }
     }
+}
+
+export function toggleMilitaryTime(status) {
+    return {
+        type: TOGGLE_MILITARY_TIME,
+        payload: status
+    };
+}
+
+export function updateFilter(filter) {
+    return {
+        type: UPDATE_FILTER,
+        payload: filter
+    };
 }
